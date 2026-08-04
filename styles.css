@@ -446,6 +446,103 @@ h3.section {
   text-transform: uppercase;
 }
 
+/* Delivery structure */
+.delivery-card { padding: 16px; }
+.delivery-root { display: flex; flex-direction: column; gap: 12px; }
+.delivery-folder {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.delivery-folder.root {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(77,163,255,.10);
+  border: 1px solid rgba(77,163,255,.28);
+}
+.delivery-folder strong {
+  display: inline;
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  word-break: break-word;
+}
+.folder-icon {
+  flex-shrink: 0;
+  width: 22px;
+  text-align: center;
+  line-height: 1.4;
+}
+.folder-note {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.4;
+}
+.tier-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(77,163,255,.14);
+  border: 1px solid rgba(77,163,255,.28);
+  color: #d7e8ff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  vertical-align: middle;
+}
+.tier-tag.gold {
+  background: rgba(255,214,106,.12);
+  border-color: rgba(255,214,106,.28);
+  color: var(--gold);
+}
+.delivery-tree {
+  display: grid;
+  gap: 10px;
+  margin-left: 8px;
+  padding-left: 12px;
+  border-left: 2px solid rgba(77,163,255,.22);
+}
+.delivery-item {
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.07);
+  border-radius: 12px;
+  padding: 12px 12px 10px;
+}
+.delivery-item.file {
+  background: rgba(255,214,106,.04);
+  border-color: rgba(255,214,106,.16);
+}
+.delivery-children {
+  list-style: none;
+  margin: 10px 0 0 32px;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+.delivery-children li {
+  position: relative;
+  color: #d7e8ff;
+  font-size: 12.5px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(0,0,0,.18);
+  border: 1px solid rgba(255,255,255,.05);
+}
+.delivery-children li::before {
+  content: "↳";
+  margin-right: 8px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+@media (max-width: 780px) {
+  .delivery-tree { margin-left: 2px; padding-left: 10px; }
+  .delivery-children { margin-left: 0; }
+}
+
 @media print {
   @page { margin: 12mm; }
   body { background: white; }
