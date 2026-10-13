@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<meta name="description" content="Thank you for your Done For You Visuals payment. Upload the photos for your package." />
+<title>Payment received | Done For You Visuals</title>
+<link rel="stylesheet" href="../styles.css" />
+<link rel="icon" href="../favicon.ico" />
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand-left">
+        <img class="logo" src="../logo.jpg" alt="Done For You Visuals" />
+        <p class="sub tagline">Commercial visual packages</p>
+      </div>
+      <nav class="nav" aria-label="Primary">
+        <a href="../index.html">Overview</a>
+        <a href="../tier-1.html">Tier 1</a>
+        <a href="../tier-2.html">Tier 2</a>
+        <a href="../tier-3.html">Tier 3</a>
+        <a href="../process.html">Process</a>
+        <a href="../gallery.html">Gallery</a>
+        <a href="../examples.html">Examples</a>
+        <a href="../next-steps.html">Next Steps</a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <section id="missing-payment">
+        <div class="kicker">Checkout</div>
+        <h1 class="page-title">We couldn't find a payment on this page.</h1>
+        <p class="lead">This page opens after Stripe confirms the payment. If you closed the window early, you can return to pricing and try again.</p>
+        <div class="btn-row">
+          <a class="btn" href="../next-steps.html">Back to pricing</a>
+        </div>
+      </section>
+
+      <section id="thanks" hidden>
+        <div class="kicker">Payment received</div>
+        <h1 class="page-title">Thank you. You're paid.</h1>
+        <p class="lead" id="thanks-detail"></p>
+        <p class="intake-note" id="upload-note" hidden></p>
+        <form id="intake" class="card intake">
+          <label>Your name
+            <input name="name" type="text" autocomplete="name" required maxlength="120" />
+          </label>
+          <label>Email
+            <input name="email" type="email" autocomplete="email" required maxlength="200" />
+          </label>
+          <label>Business name
+            <input name="businessName" type="text" autocomplete="organization" required maxlength="160" />
+          </label>
+          <label>Notes
+            <textarea name="notes" maxlength="4000" placeholder="Offer, colors, where these will be used, or anything we should match."></textarea>
+          </label>
+          <label>Photos
+            <input id="photos" name="photos" type="file" accept="image/*" multiple required />
+          </label>
+          <p class="intake-note">JPG, PNG, WEBP, GIF, or HEIC. Up to 24 photos, 20 MB each. They're stored with this order, not on a public page.</p>
+          <button id="intake-submit" class="btn" type="submit">Send photos</button>
+          <p id="form-status" class="checkout-status" role="status"></p>
+        </form>
+      </section>
+    </div>
+
+    <div class="footer">Done For You Visuals · Van Nuys, CA</div>
+  </main>
+  <script src="/checkout-success.js" defer></script>
+</body>
+</html>

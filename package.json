@@ -1,0 +1,20 @@
+{
+  "name": "dfyv-site",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node scripts/test.mjs",
+    "start": "node scripts/dev-server.mjs"
+  },
+  "dependencies": {
+    "@vercel/blob": "^2.3.0",
+    "stripe": "^20.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

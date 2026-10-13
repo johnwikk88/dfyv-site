@@ -3,21 +3,30 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Choose Tier 1 ($497), Tier 2 ($997), or Tier 3 ($1,997 / $1,497 mo). Send your brief to @John_b_designs to kick off Done For You Visuals." />
+<meta name="description" content="Start with Local Starter ($297), or choose Tier 1 ($497), Tier 2 ($997), or Tier 3 ($1,997 / $1,497 mo). Message @John_b_designs to kick off." />
 <title>Next Steps | Done For You Visuals</title>
+<link rel="canonical" href="https://dfyv-site.vercel.app/next-steps" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Done For You Visuals" />
+<meta property="og:title" content="Next Steps | Done For You Visuals" />
+<meta property="og:description" content="Start with Local Starter ($297), or choose Tier 1 ($497), Tier 2 ($997), or Tier 3 ($1,997 / $1,497 mo). Message @John_b_designs to kick off." />
+<meta property="og:url" content="https://dfyv-site.vercel.app/next-steps" />
+<meta property="og:image" content="https://dfyv-site.vercel.app/logo.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Next Steps | Done For You Visuals" />
+<meta name="twitter:description" content="Start with Local Starter ($297), or choose Tier 1 ($497), Tier 2 ($997), or Tier 3 ($1,997 / $1,497 mo). Message @John_b_designs to kick off." />
+<meta name="twitter:image" content="https://dfyv-site.vercel.app/logo.jpg" />
 <link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="favicon.ico" />
 </head>
 <body>
   <main class="page">
     <header class="topbar">
       <div class="brand-left">
-        <img class="logo" src="logo.jpg" alt="Done For You Visuals logo" />
-        <div>
-          <h1>DONE FOR YOU VISUALS</h1>
-          <p class="sub">Next Steps & Decision Page</p>
-        </div>
+        <img class="logo" src="logo.jpg" alt="Done For You Visuals" />
+        <p class="sub">Start a project</p>
       </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="index.html">Overview</a>
         <a href="tier-1.html">Tier 1</a>
         <a href="tier-2.html">Tier 2</a>
@@ -31,10 +40,36 @@
 
     <div class="content">
       <div class="kicker">Ready when you are</div>
-      <h2 class="page-title">Pick a tier. Lock the brief. We start.</h2>
+      <h1 class="page-title">Pick a package. Lock the brief. We start.</h1>
       <p class="lead">
-        No social logins required for image packages. Posting/scheduling support is optional later and always approval-based.
+        Local Starter is the $297 entry for a first campaign. Full tiers stay the same. No social logins required. Posting support is optional later and always approval-based.
       </p>
+
+
+      <section id="starter" class="starter-band" aria-label="Local Starter pack">
+        <div>
+          <div class="kicker">Entry offer</div>
+          <h3>Local Starter — a focused set before a full package</h3>
+          <p>
+            For local brands and first campaigns. Commercial AI images with human review,
+            without captions, a calendar, or an ad system yet.
+          </p>
+          <ul class="starter-list">
+            <li>6–8 commercial AI images</li>
+            <li>Human quality review</li>
+            <li>1–2 revision rounds</li>
+            <li>Commercial usage rights</li>
+          </ul>
+        </div>
+        <aside class="starter-aside">
+          <div class="label">Starter pack</div>
+          <div class="price">$297</div>
+          <div class="meta">one-time · pay here or message “Go Starter”</div>
+          <div class="buy-actions">
+            <button type="button" class="btn" data-package="local-starter">Buy Local Starter · $297</button>
+          </div>
+        </aside>
+      </section>
 
       <h3 class="section">Choose your package</h3>
       <div class="grid-3">
@@ -47,7 +82,10 @@
             <li>3 revisions</li>
             <li>Fast creative test</li>
           </ul>
-          <a class="btn ghost" href="tier-1.html">Review Tier 1</a>
+          <div class="buy-actions">
+            <button type="button" class="btn" data-package="tier-1">Buy Tier 1 · $497</button>
+            <a class="btn ghost" href="tier-1.html">Review Tier 1</a>
+          </div>
         </article>
         <article class="tier-card">
           <h4>Tier 2</h4>
@@ -58,7 +96,10 @@
             <li>Captions + calendar</li>
             <li>30-day system</li>
           </ul>
-          <a class="btn ghost" href="tier-2.html">Review Tier 2</a>
+          <div class="buy-actions">
+            <button type="button" class="btn" data-package="tier-2">Buy Tier 2 · $997</button>
+            <a class="btn ghost" href="tier-2.html">Review Tier 2</a>
+          </div>
         </article>
         <article class="tier-card recommended">
           <h4>Tier 3 <span class="badge">RECOMMENDED</span></h4>
@@ -69,7 +110,11 @@
             <li>Ad copy + structure</li>
             <li>Retainer path</li>
           </ul>
-          <a class="btn" href="tier-3.html">Review Tier 3</a>
+          <div class="buy-actions">
+            <button type="button" class="btn" data-package="tier-3">Buy Tier 3 · $1,997</button>
+            <a class="btn ghost" href="tier-3.html">Review Tier 3</a>
+            <p class="checkout-hint">The $1,497/mo retainer is still arranged by message.</p>
+          </div>
         </article>
       </div>
 
@@ -77,18 +122,24 @@
       <p class="lead">Illustrative case studies show how packages look across apparel, fitness, and skincare.</p>
       <div class="example-teaser">
         <a class="example-teaser-card" href="example-luna-thread.html">
+          <img class="teaser-shot" src="examples/luna-product-1.jpg" alt="Luna Thread sample product image" />
+          
           <span class="badge-sample">Sample</span>
           <h4>Luna Thread Co.</h4>
           <p>DTC apparel · Tier 3 full campaign.</p>
           <span class="meta-line">View sample →</span>
         </a>
         <a class="example-teaser-card" href="example-harbor-oak.html">
+          <img class="teaser-shot" src="examples/harbor-studio-1.jpg" alt="Harbor and Oak sample studio image" />
+          
           <span class="badge-sample">Sample</span>
           <h4>Harbor &amp; Oak Fitness</h4>
           <p>Local gym · Tier 2 visuals + content.</p>
           <span class="meta-line">View sample →</span>
         </a>
         <a class="example-teaser-card" href="example-glow-theory.html">
+          <img class="teaser-shot" src="examples/glow-product-1.jpg" alt="Glow Theory sample product image" />
+          
           <span class="badge-sample">Sample</span>
           <h4>Glow Theory Skincare</h4>
           <p>Beauty ecommerce · Tier 3 ads.</p>
@@ -99,12 +150,12 @@
       <h3 class="section">To kick off, send</h3>
       <div class="card">
         <ul class="checklist">
-          <li><strong>Selected tier</strong> (1, 2, or 3 — and retainer if Tier 3 monthly)</li>
-          <li><strong>Logo + brand basics</strong> (DFYV kit already on file for this sample)</li>
+          <li><strong>Selected package</strong> (Local Starter, or Tier 1, 2, or 3 — and retainer if Tier 3 monthly)</li>
+          <li><strong>Logo + brand basics</strong> — colors, fonts, and any marks you already use</li>
           <li><strong>Offer / CTA language</strong> you want on creatives</li>
           <li><strong>Platforms</strong> (Carrd, IG, Meta ads, LinkedIn, etc.)</li>
           <li><strong>Deadline</strong> if launch-sensitive</li>
-          <li><strong>Gallery picks</strong> if Round 1 concepts already exist</li>
+          <li><strong>Gallery picks</strong> if a style in the gallery is close to what you want</li>
         </ul>
       </div>
 
@@ -121,19 +172,18 @@
 
       <h3 class="section">Recommendation</h3>
       <div class="card recommended">
-        <p style="margin:0 0 10px;color:#e7eefc;">
-          <strong>For most growth-focused clients:</strong> start with <strong>Tier 3 one-time ($1,997)</strong>
-          if ads/organic both matter. Choose <strong>Tier 2 ($997)</strong> if you mainly need organic consistency.
-          Choose <strong>Tier 1 ($497)</strong> only if you specifically want images and will handle content yourself.
+        <p style="margin:0;">
+          <strong>First campaign or a local brand:</strong> start with <strong>Local Starter ($297)</strong>.
+          <strong>For most growth-focused clients:</strong> <strong>Tier 3 one-time ($1,997)</strong>
+          if ads and organic both matter. Choose <strong>Tier 2 ($997)</strong> for organic consistency.
+          Choose <strong>Tier 1 ($497)</strong> when you want the full 15-image set and will handle content yourself.
         </p>
-        <p class="note" style="margin:0;">
-          For DFYV’s own portfolio build: Tier 1 sample set first is fine — then productize winning layouts into client-facing Tier 2/3 proofs.
-        </p>
+
       </div>
 
       <div class="cta">
-        Ready to start?
-        <small>Message @John_b_designs with your tier · Example: “Go Tier 2” or “Tier 3 retainer”</small>
+        Message @John_b_designs
+        <small>Example: “Go Starter”, “Go Tier 2”, or “Tier 3 retainer”</small>
       </div>
     </div>
 
@@ -141,9 +191,10 @@
       <a href="examples.html">← Examples</a>
       <a class="next" href="index.html">Back to Overview</a>
     </div>
-    <div class="footer">Done For You Visuals · Increase Clicks & Revenue</div>
+    <div class="footer">Done For You Visuals · Van Nuys, CA</div>
   </main>
 
+  <script src="/checkout.js" defer></script>
   <!-- Vercel Web Analytics -->
   <script>
     window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
