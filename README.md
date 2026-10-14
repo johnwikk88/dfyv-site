@@ -71,14 +71,13 @@ Set the statement descriptor to `DONEFORYOUVISUALS` (17 characters, under Stripe
 
 ## Deploy settings
 
-This project stays a static Vercel site:
+`vercel.json` sets this for each deployment:
 
-- Framework preset: Other
-- Root directory: `.`
-- Build command: none (the success-page script is already built and committed)
-- Output directory: `.`
+- Framework preset: Other (`"framework": null`)
+- Build command: `npm run build`
+- Output directory: `public`
 
-`/api/*` becomes Functions from the files in `api/`. Do not deploy this branch to production until the env vars above are in place and a test-mode payment has been checked.
+The build copies the HTML, CSS, images, and browser scripts into `public/`. The `api/` routes stay at the project root, outside that folder, so Vercel serves `/api/checkout` and `/api/webhook` as functions. Do not deploy this branch to production until the env vars above are in place and a test-mode payment has been checked.
 
 ## Production compared with `main`
 
