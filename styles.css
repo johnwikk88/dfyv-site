@@ -461,6 +461,16 @@ h3.section {
   font-size: 12px;
 }
 
+/* Contact + social links */
+.footer-contact { margin-top: 6px; }
+.footer a, .contact-card a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.social-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 16px; margin-top: 8px; }
+.social-links a { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
+.social-links a:hover span { text-decoration: underline; }
+.social-links svg { flex: none; }
+.contact-card p { margin: 0 0 8px; }
+.contact-card .social-links { justify-content: flex-start; margin-top: 12px; }
+
 .kicker {
   display: inline-block;
   margin-bottom: 10px;
