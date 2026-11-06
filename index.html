@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Done For You Visuals delivers brand-safe commercial AI images with human review. Start with Mini (3 images, $99.99) or the Local Starter pack ($297), or choose Tier 1 ($497), Tier 2 ($1,497), or Tier 3 ($2,497)." />
+<meta name="description" content="Done For You Visuals delivers brand-safe commercial AI images with human review. Start with Mini (3 images, $99.99) or the Local Starter pack ($297), or choose Tier 1 ($497), Tier 2 ($1,497), or Tier 3 ($2,099)." />
 <title>Done For You Visuals — Commercial AI Visual Packages</title>
 <link rel="canonical" href="https://www.dfyvisuals.com/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Done For You Visuals" />
 <meta property="og:title" content="Done For You Visuals — Commercial AI Visual Packages" />
-<meta property="og:description" content="Done For You Visuals delivers brand-safe commercial AI images with human review. Start with Mini (3 images, $99.99) or the Local Starter pack ($297), or choose Tier 1 ($497), Tier 2 ($1,497), or Tier 3 ($2,497)." />
+<meta property="og:description" content="Done For You Visuals delivers brand-safe commercial AI images with human review. Start with Mini (3 images, $99.99) or the Local Starter pack ($297), or choose Tier 1 ($497), Tier 2 ($1,497), or Tier 3 ($2,099)." />
 <meta property="og:url" content="https://www.dfyvisuals.com/" />
 <meta property="og:image" content="https://www.dfyvisuals.com/logo.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Done For You Visuals — Commercial AI Visual Packages" />
-<meta name="twitter:description" content="Done For You Visuals delivers brand-safe commercial AI images with human review. Start with Mini (3 images, $99.99) or the Local Starter pack ($297), or choose Tier 1 ($497), Tier 2 ($1,497), or Tier 3 ($2,497)." />
+<meta name="twitter:description" content="Done For You Visuals delivers brand-safe commercial AI images with human review. Start with Mini (3 images, $99.99) or the Local Starter pack ($297), or choose Tier 1 ($497), Tier 2 ($1,497), or Tier 3 ($2,099)." />
 <meta name="twitter:image" content="https://www.dfyvisuals.com/logo.jpg" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="icon" href="favicon.ico" />
@@ -64,7 +64,7 @@
           <div class="note">
             Local Starter and full packages<br />
             Van Nuys, CA<br />
-            Message @John_b_designs — “Go Starter”
+            Message <a href="https://x.com/John_b_designs" target="_blank" rel="noopener noreferrer">@John_b_designs</a> — “Go Starter”
           </div>
           <div class="cta-wrap">
             <a class="btn" href="#starter">See Local Starter →</a>
@@ -114,8 +114,9 @@
           <div class="label">Mini</div>
           <div class="price">$99.99</div>
           <div class="meta">one-time</div>
-          <a class="btn" href="#contact">Contact us</a>
-          <div class="meta"><a href="mailto:hello@dfyvisuals.com?subject=Mini%20package">hello@dfyvisuals.com</a></div>
+          <!-- NEED_STRIPE_LINK: mini -->
+          <a class="btn" data-package="mini" href="mailto:hello@dfyvisuals.com?subject=Buy%20Mini%20%2499.99">Buy Mini — $99.99</a>
+          <div class="meta"><a href="mailto:hello@dfyvisuals.com">hello@dfyvisuals.com</a></div>
         </aside>
       </section>
 
@@ -139,7 +140,7 @@
           <div class="label">Starter pack</div>
           <div class="price">$297</div>
           <div class="meta">one-time · entry offer</div>
-          <a class="btn" href="#contact">Contact us</a>
+          <a class="btn" data-package="starter" href="https://buy.stripe.com/00w00ibGx9033boadFd7q00">Buy Starter — $297</a>
         </aside>
       </section>
 
@@ -155,6 +156,7 @@
             <li>Organized delivery + usage rights</li>
             <li>Best for testing creatives</li>
           </ul>
+          <a class="btn" data-package="tier1" href="https://buy.stripe.com/4gMdR84e5a476nAadFd7q01">Buy Tier 1 — $497</a>
           <a class="btn ghost" href="tier-1.html">Open Tier 1</a>
         </article>
 
@@ -163,26 +165,46 @@
           <div class="price">$1,497</div>
           <div class="meta">one-time</div>
           <ul>
-            <li>15 custom commercial AI images</li>
-            <li>8–10 captions (3 tones each)</li>
+            <li>30 images stacked (Tier 1’s 15 + 15 more)</li>
+            <li>Captions × 3 tones</li>
             <li>Hashtags + posting times</li>
             <li>30-day content calendar</li>
           </ul>
+          <!-- NEED_STRIPE_LINK: tier2 -->
+          <a class="btn" data-package="tier2" href="mailto:hello@dfyvisuals.com?subject=Buy%20Tier%202%20%241%2C497">Buy Tier 2 — $1,497</a>
           <a class="btn ghost" href="tier-2.html">Open Tier 2</a>
         </article>
 
         <article class="tier-card recommended">
           <h4>Tier 3 — Full Campaign <span class="badge">RECOMMENDED</span></h4>
-          <div class="price">$2,497</div>
-          <div class="meta">one-time · or $1,497/mo retainer</div>
+          <div class="price">$2,099</div>
+          <div class="meta">one-time · or $1,497/mo premium retainer</div>
           <ul>
-            <li><strong>35–40 images total</strong> (15 + 15 + 20–25 ad images)</li>
-            <li>Everything in Tier 2: captions + 30-day calendar</li>
+            <li><strong>35–40 images total</strong></li>
+            <li>Everything in Tier 2: 30 stacked images, captions × 3 tones, 30-day calendar</li>
             <li>Feed / carousel / story variations</li>
             <li>Ad copy + campaign structure</li>
           </ul>
-          <a class="btn" href="tier-3.html">Open Tier 3</a>
+          <!-- NEED_STRIPE_LINK: tier3 -->
+          <a class="btn" data-package="tier3" href="mailto:hello@dfyvisuals.com?subject=Buy%20Tier%203%20%242%2C099">Buy Tier 3 — $2,099</a>
+          <a class="btn ghost" href="tier-3.html">Open Tier 3</a>
         </article>
+      </div>
+
+      <h3 class="section">Logo add-on</h3>
+      <div class="card" id="logo">
+        <strong class="card-title tight">Logo add-on — $197</strong>
+        <p class="note" style="margin:0 0 8px;">Flat fee. Add it to any package, including Mini. Not a separate tier.</p>
+        <ul class="checklist">
+          <li>Primary mark</li>
+          <li>Color + mono variants</li>
+          <li>Common file formats (PNG, SVG, JPG)</li>
+          <li>1–2 revision rounds</li>
+        </ul>
+        <div class="btn-row">
+          <!-- NEED_STRIPE_LINK: logo -->
+          <a class="btn" data-package="logo" href="mailto:hello@dfyvisuals.com?subject=Buy%20Logo%20add-on%20%24197">Buy logo add-on — $197</a>
+        </div>
       </div>
 
       <h3 class="section">Quick comparison</h3>
@@ -202,7 +224,7 @@
               <td><strong>Commercial images</strong></td>
               <td class="mid">8</td>
               <td class="mid">15</td>
-              <td class="mid">15</td>
+              <td class="hi">30 stacked</td>
               <td class="hi">35–40</td>
             </tr>
             <tr>
@@ -238,23 +260,24 @@
               <td class="lo">—</td>
               <td class="lo">—</td>
               <td class="lo">—</td>
-              <td class="hi">$1,497/mo</td>
+              <td class="hi">Premium $1,497/mo</td>
             </tr>
             <tr>
               <td><strong>Price</strong></td>
               <td><strong>$297</strong></td>
               <td><strong>$497</strong></td>
               <td><strong>$1,497</strong></td>
-              <td><strong>$2,497</strong></td>
+              <td><strong>$2,099</strong></td>
             </tr>
           </tbody>
         </table>
+        <p class="note" style="margin:12px 0 0;">Main monthly retainer is <strong>$697/mo</strong> (15 images, captions, and a 30-day calendar; 3-month minimum). The Tier 3 retainer column is the premium retainer at <strong>$1,497/mo</strong> (Tier 3 scope monthly; 3-month minimum).</p>
       </div>
 
       <h3 class="section">Monthly retainers</h3>
       <div class="grid-2">
         <article class="tier-card">
-          <h4>Monthly Retainer</h4>
+          <h4>Main monthly retainer</h4>
           <div class="price">$697/mo</div>
           <div class="meta">3-month minimum</div>
           <ul>
@@ -262,19 +285,19 @@
             <li>Captions</li>
             <li>30-day content calendar</li>
           </ul>
-          <a class="btn ghost" href="#contact">Contact us</a>
+          <a class="btn ghost" data-package="retainer" href="https://buy.stripe.com/28EcN4aCt5NRbHU2Ldd7q04">Buy monthly retainer — $697/mo</a>
         </article>
 
         <article class="tier-card recommended">
-          <h4>Premium Retainer</h4>
+          <h4>Premium retainer</h4>
           <div class="price">$1,497/mo</div>
-          <div class="meta">for brands running ads</div>
+          <div class="meta">Tier 3 scope monthly · 3-month minimum</div>
           <ul>
             <li>Tier 3 scope, every month</li>
             <li>Ad-optimized images + variations</li>
             <li>Ad copy + campaign structure</li>
           </ul>
-          <a class="btn" href="#contact">Contact us</a>
+          <a class="btn" data-package="premium" href="https://buy.stripe.com/00w8wObGx7VZ4fs1H9d7q05">Buy premium retainer — $1,497/mo</a>
         </article>
       </div>
 
