@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Start with Mini (3 images, $99.99) or Local Starter ($297), or choose Tier 1 ($497), Tier 2 ($1,497), or Tier 3 ($2,497 / $1,497 mo). Message @John_b_designs to kick off." />
+<meta name="description" content="Start with Mini (3 images, $99.99) or Local Starter ($297), or choose Tier 1 ($497), Tier 2 ($1,497, 30 images stacked), or Tier 3 ($2,099 / $1,497 mo premium retainer). Message @John_b_designs to kick off." />
 <title>Next Steps | Done For You Visuals</title>
 <link rel="canonical" href="https://www.dfyvisuals.com/next-steps" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Done For You Visuals" />
 <meta property="og:title" content="Next Steps | Done For You Visuals" />
-<meta property="og:description" content="Start with Mini (3 images, $99.99) or Local Starter ($297), or choose Tier 1 ($497), Tier 2 ($1,497), or Tier 3 ($2,497 / $1,497 mo). Message @John_b_designs to kick off." />
+<meta property="og:description" content="Start with Mini (3 images, $99.99) or Local Starter ($297), or choose Tier 1 ($497), Tier 2 ($1,497, 30 images stacked), or Tier 3 ($2,099 / $1,497 mo premium retainer). Message @John_b_designs to kick off." />
 <meta property="og:url" content="https://www.dfyvisuals.com/next-steps" />
 <meta property="og:image" content="https://www.dfyvisuals.com/logo.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Next Steps | Done For You Visuals" />
-<meta name="twitter:description" content="Start with Mini (3 images, $99.99) or Local Starter ($297), or choose Tier 1 ($497), Tier 2 ($1,497), or Tier 3 ($2,497 / $1,497 mo). Message @John_b_designs to kick off." />
+<meta name="twitter:description" content="Start with Mini (3 images, $99.99) or Local Starter ($297), or choose Tier 1 ($497), Tier 2 ($1,497, 30 images stacked), or Tier 3 ($2,099 / $1,497 mo premium retainer). Message @John_b_designs to kick off." />
 <meta name="twitter:image" content="https://www.dfyvisuals.com/logo.jpg" />
 <link rel="stylesheet" href="styles.css" />
 <link rel="icon" href="favicon.ico" />
@@ -42,9 +42,29 @@
       <div class="kicker">Ready when you are</div>
       <h1 class="page-title">Pick a package. Lock the brief. We start.</h1>
       <p class="lead">
-        Mini is a $99.99 try-out (3 images). Local Starter is the $297 entry for a first campaign. Full tiers stay the same. No social logins required. Posting support is optional later and always approval-based.
+        Mini is a $99.99 try-out (3 images). Local Starter is the $297 entry for a first campaign. Tier 2 is 30 images stacked. Tier 3 is $2,099 one-time. No social logins required. Posting support is optional later and always approval-based.
       </p>
 
+      <section id="mini" class="starter-band" aria-label="Mini package">
+        <div>
+          <div class="kicker">Try-out</div>
+          <h3>Mini package — 3 images</h3>
+          <p>A small commercial set when you want to see the work before a larger package.</p>
+          <ul class="starter-list">
+            <li>3 commercial AI images</li>
+            <li>Human quality review</li>
+            <li>Commercial usage rights</li>
+          </ul>
+        </div>
+        <aside class="starter-aside">
+          <div class="label">Mini</div>
+          <div class="price">$99.99</div>
+          <div class="meta">one-time</div>
+          <!-- NEED_STRIPE_LINK: mini -->
+          <a class="btn" data-package="mini" href="mailto:hello@dfyvisuals.com?subject=Buy%20Mini%20%2499.99">Buy Mini — $99.99</a>
+          <div class="meta"><a href="mailto:hello@dfyvisuals.com">hello@dfyvisuals.com</a></div>
+        </aside>
+      </section>
 
       <section id="starter" class="starter-band" aria-label="Local Starter pack">
         <div>
@@ -65,6 +85,8 @@
           <div class="label">Starter pack</div>
           <div class="price">$297</div>
           <div class="meta">one-time · message “Go Starter”</div>
+          <a class="btn" data-package="starter" href="https://buy.stripe.com/00w00ibGx9033boadFd7q00">Buy Starter — $297</a>
+          <div class="meta"><a href="mailto:hello@dfyvisuals.com">hello@dfyvisuals.com</a></div>
         </aside>
       </section>
 
@@ -79,6 +101,7 @@
             <li>3 revisions</li>
             <li>Fast creative test</li>
           </ul>
+          <a class="btn" data-package="tier1" href="https://buy.stripe.com/4gMdR84e5a476nAadFd7q01">Buy Tier 1 — $497</a>
           <a class="btn ghost" href="tier-1.html">Review Tier 1</a>
         </article>
         <article class="tier-card">
@@ -86,22 +109,26 @@
           <div class="price">$1,497</div>
           <div class="meta">Visuals + Content</div>
           <ul>
-            <li>Everything in Tier 1</li>
-            <li>Captions + calendar</li>
-            <li>30-day system</li>
+            <li>30 images stacked (15 + 15)</li>
+            <li>Captions × 3 tones</li>
+            <li>Hashtags, posting times, 30-day calendar</li>
           </ul>
+          <!-- NEED_STRIPE_LINK: tier2 -->
+          <a class="btn" data-package="tier2" href="mailto:hello@dfyvisuals.com?subject=Buy%20Tier%202%20%241%2C497">Buy Tier 2 — $1,497</a>
           <a class="btn ghost" href="tier-2.html">Review Tier 2</a>
         </article>
         <article class="tier-card recommended">
           <h4>Tier 3 <span class="badge">RECOMMENDED</span></h4>
-          <div class="price">$2,497</div>
-          <div class="meta">or $1,497/mo</div>
+          <div class="price">$2,099</div>
+          <div class="meta">one-time · or $1,497/mo premium retainer</div>
           <ul>
-            <li>Full campaign set</li>
+            <li>35–40 images total</li>
             <li>Ad copy + structure</li>
-            <li>Retainer path</li>
+            <li>Premium retainer path</li>
           </ul>
-          <a class="btn" href="tier-3.html">Review Tier 3</a>
+          <!-- NEED_STRIPE_LINK: tier3 -->
+          <a class="btn" data-package="tier3" href="mailto:hello@dfyvisuals.com?subject=Buy%20Tier%203%20%242%2C099">Buy Tier 3 — $2,099</a>
+          <a class="btn ghost" href="tier-3.html">Review Tier 3</a>
         </article>
       </div>
 
@@ -137,7 +164,7 @@
       <h3 class="section">To kick off, send</h3>
       <div class="card">
         <ul class="checklist">
-          <li><strong>Selected package</strong> (Mini, Local Starter, or Tier 1, 2, or 3 — and retainer if Tier 3 monthly)</li>
+          <li><strong>Selected package</strong> (Mini, Local Starter, or Tier 1, 2, or 3). Monthly options: the <strong>$697/mo main retainer</strong> (15 images, captions, and a 30-day calendar; 3-month minimum) or the <strong>$1,497/mo premium retainer</strong> (Tier 3 scope monthly; 3-month minimum)</li>
           <li><strong>Logo + brand basics</strong> — colors, fonts, and any marks you already use</li>
           <li><strong>Offer / CTA language</strong> you want on creatives</li>
           <li><strong>Platforms</strong> (Carrd, IG, Meta ads, LinkedIn, etc.)</li>
@@ -146,14 +173,28 @@
         </ul>
       </div>
 
-      <h3 class="section">Add-on</h3>
+      <h3 class="section">Logo add-on</h3>
+      <div class="card" id="logo">
+        <strong class="card-title tight">Logo add-on — $197</strong>
+        <p class="note" style="margin:0 0 8px;">Flat fee. Add it to any package, including Mini. Not a separate tier.</p>
+        <ul class="checklist">
+          <li>Primary mark</li>
+          <li>Color + mono variants</li>
+          <li>Common file formats (PNG, SVG, JPG)</li>
+          <li>1–2 revision rounds</li>
+        </ul>
+        <div class="btn-row">
+          <!-- NEED_STRIPE_LINK: logo -->
+          <a class="btn" data-package="logo" href="mailto:hello@dfyvisuals.com?subject=Buy%20Logo%20add-on%20%24197">Buy logo add-on — $197</a>
+        </div>
+      </div>
+
+      <h3 class="section">Monthly retainers</h3>
       <div class="card">
-        <div class="addon-row">
-          <div>
-            <strong class="card-title tight">Logo Design</strong>
-            <p class="note" style="margin:0;">Separate from image packages. Basic mark or logo + simple usage kit.</p>
-          </div>
-          <div class="addon-price">from $197</div>
+        <p class="note" style="margin:0 0 12px;">Both retainers have a 3-month minimum. The main monthly retainer is $697/mo (15 images, captions, and a 30-day calendar). The premium retainer is $1,497/mo (Tier 3 scope monthly).</p>
+        <div class="btn-row">
+          <a class="btn" data-package="retainer" href="https://buy.stripe.com/28EcN4aCt5NRbHU2Ldd7q04">Buy monthly retainer — $697/mo</a>
+          <a class="btn" data-package="premium" href="https://buy.stripe.com/00w8wObGx7VZ4fs1H9d7q05">Buy premium retainer — $1,497/mo</a>
         </div>
       </div>
 
@@ -161,17 +202,18 @@
       <div class="card recommended">
         <p style="margin:0;">
           <strong>First campaign or a local brand:</strong> start with <strong>Local Starter ($297)</strong>, or try <strong>Mini ($99.99, 3 images)</strong> first.
-          <strong>For most growth-focused clients:</strong> <strong>Tier 3 one-time ($2,497)</strong>
-          if ads and organic both matter. Choose <strong>Tier 2 ($1,497)</strong> for organic consistency.
-          Choose <strong>Tier 1 ($497)</strong> when you want the full 15-image set and will handle content yourself.
+          <strong>For most growth-focused clients:</strong> <strong>Tier 3 one-time ($2,099)</strong>
+          if ads and organic both matter. Choose <strong>Tier 2 ($1,497, 30 images stacked)</strong> for organic consistency.
+          Choose <strong>Tier 1 ($497)</strong> when you want the 15-image set and will handle content yourself.
+          Ongoing work is either the <strong>$697/mo main retainer</strong> or the <strong>$1,497/mo premium retainer</strong>.
         </p>
 
       </div>
 
-      <div class="cta">
+      <a class="cta cta-link" href="https://x.com/John_b_designs" target="_blank" rel="noopener noreferrer">
         Message @John_b_designs
-        <small>Example: “Go Mini”, “Go Starter”, “Go Tier 2”, or “Tier 3 retainer”</small>
-      </div>
+        <small>Example: “Go Mini”, “Go Starter”, “Go Tier 2”, “$697 retainer”, or “Tier 3 premium retainer”</small>
+      </a>
     </div>
 
     <div class="pager">
