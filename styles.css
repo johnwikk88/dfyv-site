@@ -1326,6 +1326,8 @@ h3.section {
   font-size: 12px;
 }
 .starter-aside .btn { margin-top: 12px; }
+.ask { margin: 10px 0 0; font-size: 13px; }
+.starter-aside .ask { text-align: center; }
 .price-card a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
 @media (max-width: 780px) {
   .starter-band { grid-template-columns: 1fr; padding: 14px; margin-bottom: 14px; }
